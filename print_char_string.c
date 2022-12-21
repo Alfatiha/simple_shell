@@ -6,11 +6,11 @@
  */
 void _puts(char *str)
 {
-    int c;
+	int c;
 
-    for (c = 0; str[c] != '\0'; c++)
-        _putchar(str[c]);
-    _putchar('\n');
+	for (c = 0; str[c] != '\0'; c++)
+		_putchar(str[c]);
+	_putchar('\n');
 }
 /**
  * _putchar - prints a character
@@ -20,7 +20,7 @@ void _puts(char *str)
  */
 int _putchar(char c)
 {
-    return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
 /**
  * _memset - fills memory with a constant byte
@@ -31,9 +31,9 @@ int _putchar(char c)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-    unsigned int i;
+	unsigned int i;
 
-    for (i = 0; i < n; i++)
-        s[i] = b;
-    return (s);
+	for (i = 0; i < n; i++)
+		s[i] = b;
+	return (s);
 }
